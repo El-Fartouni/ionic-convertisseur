@@ -1,0 +1,25 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-list-header>Convertisseur</ion-list-header>
+    <ion-item>
+      <ion-input [(ngModel)]="inputMeter" (ionChange)="convert"></ion-input>
+
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="convert()">Convertit</button>
+    </ion-item>
+    <ion-item>
+      {{Result}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  Fait par Damar Ali El-Fartouni
+</ion-footer>
